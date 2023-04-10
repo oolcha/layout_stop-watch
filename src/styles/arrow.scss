@@ -1,14 +1,14 @@
 .arrow {
   position: relative;
 
-  &__minute-mn {
+  &__minute {
     display: flex;
     justify-content: center;
     position: absolute;
     animation: rotate 3600s linear 1;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 8px;
       height: 180px;
@@ -18,14 +18,14 @@
     }
   }
 
-  &__second-sc {
+  &__second {
     display: flex;
     justify-content: center;
     position: absolute;
     animation: rotate 60s linear 10;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 4px;
       height: 250px;
@@ -38,7 +38,7 @@
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   to {
     transform: rotate(1turn);
